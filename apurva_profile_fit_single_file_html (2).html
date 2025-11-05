@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apurva R. Chavan — Profile & Fit</title>
+  <meta name="description" content="Single‑page profile and role fit for Apurva R. Chavan (Data Scientist / ML & Backend Engineer)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Archivo:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Neon glass theme */
+      --bg: #0b1220; --ink:#e6e9f5; --muted:#9aa4bf; --line:rgba(255,255,255,.08); --card:rgba(255,255,255,.06);
+      --accent:#7c3aed; --accent2:#06b6d4; --radius:18px; --shadow:0 12px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:radial-gradient(1200px 800px at 10% -10%, rgba(124,58,237,.25), transparent 60%), radial-gradient(1000px 700px at 100% 0%, rgba(6,182,212,.18), transparent 50%), var(--bg); color:var(--ink); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1080px; margin:0 auto; padding:30px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px; border-radius:var(--radius); background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid var(--line); box-shadow:var(--shadow); backdrop-filter: blur(10px)}
+    .brand{display:flex; align-items:center; gap:14px}
+    .avatar{inline-size:60px; block-size:60px; border-radius:16px; display:grid; place-items:center; font-weight:800; color:#fff; background:conic-gradient(from 180deg, var(--accent), var(--accent2), var(--accent)); box-shadow:0 0 0 4px rgba(255,255,255,.06), var(--shadow)}
+    nav{display:flex; gap:10px; flex-wrap:wrap}
+    nav a{border:1px solid var(--line); padding:10px 14px; border-radius:999px; background:rgba(255,255,255,.06); box-shadow:var(--shadow)}
+    h1{font-family:Archivo, system-ui; font-size:44px; line-height:1.1; margin:8px 0 6px}
+    h2{font-family:Archivo, system-ui; font-size:22px; margin:0 0 10px}
+    p{margin:8px 0}
+    .muted{color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow); backdrop-filter: blur(10px)}
+    .grid{display:grid; gap:18px}
+    .cols-12{grid-template-columns:repeat(12,1fr)}
+    .span-4{grid-column:span 4}
+    .span-6{grid-column:span 6}
+    .span-8{grid-column:span 8}
+    .stack{display:flex; flex-wrap:wrap; gap:10px}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.06); font-size:14px; box-shadow:var(--shadow)}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px; font-weight:700; color:#0b1220; background:linear-gradient(135deg,var(--accent),var(--accent2)); border:1px solid #0000; box-shadow:var(--shadow)}
+    .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--line)}
+    ul{margin:8px 0 0 18px; line-height:1.7}
+    footer{margin:32px 0 10px; text-align:center; color:var(--muted); font-size:13px}
+    @media (max-width:920px){.cols-12{grid-template-columns:repeat(6,1fr)} .span-8,.span-6,.span-4{grid-column:span 6}}
+
+    /* Projects grid cards */
+    .projects{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    .project{display:flex; flex-direction:column; gap:8px; transition: transform .15s ease, box-shadow .15s ease}
+    .project:hover{transform: translateY(-2px); box-shadow:0 16px 40px rgba(0,0,0,.45)}
+    .project .title{font-weight:700}
+    .project .meta{font-size:13px; color:var(--muted)}
+    @media (max-width:920px){.projects{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">AR</div>
+        <div>
+          <div style="font-weight:800; letter-spacing:.2px">Apurva Ravikar Chavan</div>
+          <div class="muted" style="font-size:13px">Data Scientist / ML & Backend Engineer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#fit">How I can help</a>
+        <a href="#plan">30‑60‑90</a>
+      </nav>
+    </header>
+    <section class="card" style="margin-top:16px; display:flex; align-items:center; justify-content:space-between; gap:16px">
+      <div>
+        </div>
+      <div class="stack">
+        <span class="pill">Python · FastAPI/Flask</span>
+        <span class="pill">Postgres/SQL</span>
+        <span class="pill">REST & WebSockets</span>
+        <span class="pill">AWS/GCP (basics)</span>
+        <span class="pill">React Native (expo basics)</span>
+      </div>
+    </section>
+    <section id="about" class="card" style="margin-top:16px">
+      <h2>About</h2>
+      <p>I ship end‑to‑end: <strong>data → APIs/models → deploy → monitor</strong>. Strong in Python (FastAPI/Flask), SQL/Postgres, and pragmatic ML for time‑series & NLP. I optimize for <strong>reliability, latency, and developer ergonomics</strong> — the stuff that keeps bookings flowing and ops calm.</p>
+      <div class="stack" style="margin-top:10px">
+        <span class="pill">New Haven, CT (ET)</span>
+        <a class="pill" href="mailto:apurvachavan125@gmail.com">apurvachavan125@gmail.com</a>
+        <a class="pill" href="https://github.com/Apurva1205" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="https://www.linkedin.com/in/apurvachavan125" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="grid cols-12" style="margin-top:16px">
+      <div class="span-8 card">
+        <h2>Why this role</h2>
+        <ul>
+          <li><strong>Mission fit:</strong> building resilient, low‑latency systems for real travelers is my sweet spot.</li>
+          <li><strong>Realtime + scale:</strong> comfortable with WebSockets, queues, caching layers, and idempotent jobs for high‑volume transactions.</li>
+          <li><strong>Integration mindset:</strong> I work well at boundaries — clear contracts, retries/backoff, observability, and sandboxed connectors.</li>
+        </ul>
+      </div>
+      <div class="span-4 card">
+        <h2>Tech match</h2>
+        <ul>
+          <li>Python, FastAPI/Flask</li>
+          <li>Postgres, SQL, indexing</li>
+          <li>REST APIs + WebSockets</li>
+          <li>AWS/GCP basics, Docker, CI</li>
+          <li>React Native (expo basics)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="card" style="margin-top:16px">
+      <h1>Selected projects</h1>
+      <div class="projects" style="margin-top:10px">
+        <div class="project card">
+          <div class="title">AI Resume Enhancer</div>
+          <div class="meta">FastAPI microservice · vector search · evaluation harness</div>
+          <p class="muted">Resume–JD matcher with clean contracts and monitoring. Built APIs that score fit and surface missing skills.</p>
+          <div class="stack">
+            <a class="btn" href="https://github.com/Apurva1205/AI-RESUME-ENHANCER" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+        <div class="project card">
+          <div class="title">Energy Load Forecasting</div>
+          <div class="meta">Time‑series pipeline · model service · anomaly alerts</div>
+          <p class="muted">ETL + forecasting with cached aggregates and alerting for outliers; clear offline metrics and dashboards.</p>
+          <div class="stack">
+            <a class="btn" href="https://github.com/Apurva1205/Time-Series-Forecasting-For-Energy-Consumption" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+        <div class="project card">
+          <div class="title">Flask App (Realtime‑ready backend)</div>
+          <div class="meta">Flask/SocketIO patterns · JWT sessions · env config</div>
+          <p class="muted">Service scaffolding for realtime flows with sensible env management and deployment practices.</p>
+          <div class="stack">
+            <a class="btn" href="https://github.com/Apurva1205/Flask-app" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="grid cols-12" style="margin-top:16px">
+      <div class="span-8 card">
+        <h2>Core skills</h2>
+        <div class="stack">
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI / Flask</span>
+          <span class="pill">PyTorch</span>
+          <span class="pill">Pandas / NumPy</span>
+          <span class="pill">Postgres / SQL</span>
+          <span class="pill">ETL / Data Pipelines</span>
+          <span class="pill">LLM / NLP (RAG, prompting)</span>
+          <span class="pill">Time‑series</span>
+          <span class="pill">Docker / CI</span>
+          <span class="pill">AWS / GCP (basics)</span>
+        </div>
+      </div>
+      <div class="span-4 card">
+        <h2>Working style</h2>
+        <ul>
+          <li>Vertical slices first, then iterate.</li>
+          <li>Typed contracts, tests, runbooks.</li>
+          <li>Metrics: latency, cost, quality.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="highlights" class="grid cols-12" style="margin-top:16px">
+      <div class="span-6 card">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Built APIs that turn messy inputs into clean outputs with validation + monitoring.</li>
+          <li>Shipped ML models (NLP/time‑series) with clear evaluation and drift checks.</li>
+          <li>Improved reliability and speed with indexing, caching, and idempotent jobs.</li>
+        </ul>
+      </div>
+      <div class="span-6 card">
+        <h2>What you can expect</h2>
+        <ul>
+          <li>Hands‑on ownership, crisp communication, fast feedback loops.</li>
+          <li>Readable code, pragmatic design docs, and automated checks.</li>
+          <li>Product focus: measure real user impact, not just model metrics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="fit" class="card" style="margin-top:16px">
+      <h2>How I can help your team</h2>
+      <ul>
+        <li><strong>Booking reliability:</strong> idempotent create/update flows, request de‑dup, and outbox patterns so double‑clicks don’t double‑book.</li>
+        <li><strong>Fast, safe APIs:</strong> Pydantic‑typed DTOs, pagination, rate‑limits, structured errors; metrics on p95/p99 latency & error budgets.</li>
+        <li><strong>Realtime updates:</strong> WebSocket channels for status/seat updates with permissioned topics and fallbacks to SSE/polling.</li>
+        <li><strong>Integrations:</strong> connector layer with retries/backoff, circuit breakers, thorough logging; test harnesses + sandboxes for airline partners .</li>
+        <li><strong>Ops clarity:</strong> dashboards for bookings/throughput, alerting on saturation, and runbooks for on‑call.</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="grid cols-12" style="margin-top:16px">
+      <div class="span-8 card">
+        <h2>30‑60‑90 plan</h2>
+        <ol>
+          <li><strong>Days 1‑10:</strong> local dev env; health checks; base FastAPI service; DB migrations; first vertical slice: <em>search → hold seat → confirm → emit event</em>.</li>
+          <li><strong>Days 11‑30:</strong> add WebSocket notifications; caching for read paths; idempotent upserts; basic dashboards (success rate, p95 latency, timeouts).</li>
+          <li><strong>Days 31‑60:</strong> harden integration layer (retries/backoff, circuit breakers); load tests; cost/latency pass; on‑call runbook + incident sims.</li>
+        </ol>
+      </div>
+      <div class="span-4 card">
+        <h2>Tooling I’d use</h2>
+        <ul>
+          <li>FastAPI, Pydantic, Uvicorn/Gunicorn</li>
+          <li>Postgres (+ indexes, EXPLAIN)</li>
+          <li>Redis for cache/locks</li>
+          <li>Celery/RQ or SQS/Lambda for jobs</li>
+          <li>Prometheus/Grafana or CloudWatch</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Apurva R. Chavan · Single‑file HTML</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
